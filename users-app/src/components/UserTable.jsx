@@ -12,7 +12,10 @@ const UserTable = () => {
     const users = [
         { name: "Dylan", cc: "11120545574", phone: "3135105478", email: "dylan@gmail.com" },
         { name: "Javier", cc: "31242694", phone: "3128601430", email: "javier@gmail.com" },
-        { name: "Herney", cc: "2120545584", phone: "3208723420", email: "herney@gmail.com" }
+        { name: "Herney", cc: "2120545584", phone: "3208723420", email: "herney@gmail.com" },
+        { name: "Ervin", cc: "510545044", phone: "31828720", email: "ervin@gmail.com" },
+        { name: "Manuel", cc: "312045584", phone: "3108723420", email: "Manuel@gmail.com" },
+        { name: "Wilson Stiven", cc: "112025504", phone: "315223344", email: "ws@gmail.com" }
     ];
 
     const handleEditClick = (user) => {
@@ -40,8 +43,8 @@ const UserTable = () => {
     };
 
     return (
-        <div className="container" style={{ maxWidth: "100%" }}>
-            <div className="table-responsive" style={{ maxHeight: "480px", overflow: "auto" }}>
+        <div className="container" style={{ maxWidth: "100%"}}>
+            <div className="table-responsive" style={{ maxHeight: "500px", overflow: "auto" }}>
                 <table className="table table-bordered">
                     <thead>
                         <tr>
