@@ -1,12 +1,24 @@
 # MicroFrontendsLab
 
 
+## Setup
+There is a script for executing the microfrontends.
+* For Windows
+```bash
+run_all_windows.bat
+```
+* For Linux
+```bash
+sh run_all_linux.sh
+```
 ## Create React Basic App with Webpack
+Instructions for creating a basic webpack application.
 ```bash
 npx create-react-app <app-name>
 cd <app-name>
 npm i -D webpack webpack-cli html-webpack-plugin webpack-dev-server babel-loader css-loader
 ```
+
 ### Create webpack.config.js in the root directory
 ```javascript
 // home-app/webpack.config.js
