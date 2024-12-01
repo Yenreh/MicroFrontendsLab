@@ -16,7 +16,6 @@ function App() {
                         <Route path="/login" element={<Login />} />
                     </Routes>
                 </Suspense>
-                <div className="container">App-shell container</div>
             </div>
         </Router>
     );
