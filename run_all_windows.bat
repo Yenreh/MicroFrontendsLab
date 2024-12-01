@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-:: Start all applications in the background
+:: Start all applications in the backgrounds
 start "Dashboard" cmd /c "cd home-app && npm install && npm start"
 set DASHBOARD_PID=%!
 
