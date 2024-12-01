@@ -22,7 +22,7 @@ const Sidebar = () => {
                     </a>
                 </li>
                 <li>
-                    <a className="btn-link">
+                    <a href="/login" className="btn-link">
                         <BiLogOut className="icon" />
                         Cerrar Sesión
                     </a>
