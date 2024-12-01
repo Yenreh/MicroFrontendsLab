@@ -87,7 +87,7 @@ import('./index.js');
 ```
 
 ## Last step add entrypoint in shel app webpack.config.js
-```javascript
+```
 {
     remotes: {
         "<app-name>": "<app-name>@http://localhost:3001/remoteEntry.js",
