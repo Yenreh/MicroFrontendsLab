@@ -1,12 +1,11 @@
 import React from 'react'; // Must be imported for webpack to work
 import './App.css';
+import LoginForm from './LoginForm';
 
 function App() {
   return (
-      <div>
-        <div>This is Login page</div>
-      </div>
+    <LoginForm />
   );
-}
+};
 
 export default App;
