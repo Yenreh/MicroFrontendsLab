@@ -1,32 +1,15 @@
-// app-shell/webpack.config.js
-const express = require('express');
+// home-app/webpack.config.js
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+// import ModuleFederationPlugin from webpack
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
+// import dependencies from package.json, which includes react and react-dom
 const { dependencies } = require("./package.json");
 
 module.exports = {
-    entry: "./src/entry.js",
+    entry: "./src/entry.js", // using /entry.js file in previous step
     mode: "development",
     devServer: {
-        port: 3000,
-        historyApiFallback: true,
-        setupMiddlewares: (middlewares, devServer) => {
-            if (!devServer) {
-                throw new Error('webpack-dev-server is not defined');
-            }
-
-            // Middleware to handle malformed URIs
-            devServer.app.use((req, res, next) => {
-                try {
-                    decodeURIComponent(req.path);
-                    next();
-                } catch (e) {
-                    res.status(400).send('Bad Request');
-                }
-            });
-
-            return middlewares;
-        },
+        port: 3003,
     },
     module: {
         rules: [
@@ -53,19 +36,18 @@ module.exports = {
             template: "./public/index.html",
         }),
         new ModuleFederationPlugin({
-            name: "AppShell",
-            remotes: {
-                "HomeApp": "HomeApp@http://localhost:3001/remoteEntry.js",
-                "UsersApp": "UsersApp@http://localhost:3002/remoteEntry.js",
-                "LoginApp": "LoginApp@http://localhost:3003/remoteEntry.js",
+            name: "LoginApp",
+            filename: "remoteEntry.js", // output a js file
+            exposes: { // to expose the application
+                "./Login": "./src/App",
             },
-            shared: {
-                ...dependencies,
-                react: {
+            shared: { // and shared
+                ...dependencies, // some other dependencies
+                react: { // react
                     singleton: true,
                     requiredVersion: dependencies["react"],
                 },
-                "react-dom": {
+                "react-dom": { // react-dom
                     singleton: true,
                     requiredVersion: dependencies["react-dom"],
                 },

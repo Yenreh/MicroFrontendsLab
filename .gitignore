@@ -130,9 +130,11 @@ dist
 .pnp.*
 /.idea/
 .idea/
-/users-app/package-lock.json
-/app-shell/package-lock.json
 /app-shell/node_modules/
+/app-shell/package-lock.json
 /home-app/node_modules/
 /users-app/node_modules/
+/users-app/package-lock.json
 /home-app/package-lock.json
+/login-app/node_modules/
+/login-app/package-lock.json

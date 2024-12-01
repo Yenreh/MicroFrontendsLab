@@ -4,7 +4,7 @@ import './App.css';
 
 const Home = lazy(() => import('HomeApp/Home'));
 const Users = lazy(() => import('UsersApp/Users'));
-
+const Login = lazy(() => import('LoginApp/Login'));
 function App() {
     return (
         <Router>
@@ -13,6 +13,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/users" element={<Users />} />
+                        <Route path="/login" element={<Login />} />
                     </Routes>
                 </Suspense>
                 <div className="container">App-shell container</div>
