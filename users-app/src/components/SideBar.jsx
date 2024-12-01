@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Sidebar.css"
+import "../styles/SideBar.css";
 import { FaUser } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { BiLogOut } from "react-icons/bi";

@@ -1,12 +1,11 @@
 import React from "react";
-import "../styles/Sidebar.css"
+import "../styles/SideBar.css";
 import { useNavigate } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { MdDashboard } from "react-icons/md";
 import { BiLogOut } from "react-icons/bi";
 
 const Sidebar = () => {
-
     return (
         <aside className="sidebar">
             <ul>

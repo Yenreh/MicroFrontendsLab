@@ -22,6 +22,48 @@ const UserTable = () => {
                             <td>11120545574</td>
                             <td>3135105478</td>
                             <td>dylan@gmail.com</td>
+                            <td>
+                                <button className="btn btn-outline-primary">
+                                    Editar
+                                </button>  
+                            </td>
+                            <td>
+                                <button className="btn btn-outline-danger">
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Javier</td>
+                            <td>31242694</td>
+                            <td>3128601430</td>
+                            <td>javier@gmail.com</td>
+                            <td>
+                                <button className="btn btn-outline-primary">
+                                    Editar
+                                </button>  
+                            </td>
+                            <td>
+                                <button className="btn btn-outline-danger">
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Herney</td>
+                            <td>2120545584</td>
+                            <td>3208723420</td>
+                            <td>herney@gmail.com</td>
+                            <td>
+                                <button className="btn btn-outline-primary">
+                                    Editar
+                                </button>  
+                            </td>
+                            <td>
+                                <button className="btn btn-outline-danger">
+                                    Eliminar
+                                </button>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
