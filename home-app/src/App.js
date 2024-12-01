@@ -1,11 +1,10 @@
 import React from 'react'; // Must be imported for webpack to work
-import './App.css';
+import Dashboard from './Dashboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-      <div>
-        <div>This is Home page</div>
-      </div>
+    <Dashboard />
   );
 }
 

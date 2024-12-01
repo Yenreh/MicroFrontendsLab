@@ -1,11 +1,9 @@
 import React from 'react'; // Must be imported for webpack to work
-import './App.css';
+import Users from './Users';
 
 function App() {
   return (
-      <div>
-        <div>This is Users page</div>
-      </div>
+    <Users />
   );
 }
 
